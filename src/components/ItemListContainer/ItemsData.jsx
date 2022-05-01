@@ -2,7 +2,7 @@ export const itemsData = [
   {
     id: 1,
     precio: 739,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy S22 Ultra",
     img: "https://images.samsung.com/is/image/samsung/p6pim/es/2202/gallery/es-galaxy-s22-ultra-s908-411065-sm-s908bzadeub-530876980",
     Description: "Asd",
@@ -10,7 +10,7 @@ export const itemsData = [
   {
     id: 2,
     precio: 650,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy S21 Ultra",
     img: "https://images.samsung.com/is/image/samsung/p6pim/latin/galaxy-s21/gallery/latin-galaxy-s21-5g-g991-sm-g991bzvjtpa-368316791?$1300_1038_PNG$",
     Description: "Asd",
@@ -18,7 +18,7 @@ export const itemsData = [
   {
     id: 3,
     precio: 752,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy Note 20 Ultra",
     img: "https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-320814310?$720_576_PNG$",
     Description: "Asd",
@@ -26,7 +26,7 @@ export const itemsData = [
   {
     id: 4,
     precio: 730,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy Fold 3",
     img: "https://images.samsung.com/is/image/samsung/p6pim/es/2108/gallery/es-galaxy-z-fold3-f926-5g-sm-f926bzsdeub-477345061",
     Description: "Asd",
@@ -34,7 +34,7 @@ export const itemsData = [
   {
     id: 5,
     precio: 540,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy A52 5G",
     img: "https://storage.comprasmartphone.com/smartphones/samsung-galaxy-a52-5g.png",
     Description: "Asd",
@@ -42,7 +42,7 @@ export const itemsData = [
   {
     id: 6,
     precio: 590,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy S21 FE",
     img: "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-g990ezwaaro/gallery/ar-galaxy-s21-fe-g990-408811-sm-g990ezwaaro-530832035",
     Description: "Asd",
@@ -50,7 +50,7 @@ export const itemsData = [
   {
     id: 7,
     precio: 430,
-    modelo: "Samsung",
+    marca: "Samsung",
     name: "Galaxy M52 5G",
     img: "https://images.samsung.com/is/image/samsung/p6pim/cl/sm-m526bzkjcho/gallery/cl-galaxy-m52-5g-m526-sm-m526bzkjcho-519308161?$720_576_PNG$",
     Description: "Asd",
@@ -58,7 +58,7 @@ export const itemsData = [
   {
     id: 8,
     precio: 350,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "Xiaomi Mi 11i",
     img: "https://f.rpp-noticias.io/2021/02/08/1055642k2-all-kv2-1024x1024png.png",
     Description: "Asd",
@@ -66,7 +66,7 @@ export const itemsData = [
   {
     id: 9,
     precio: 189,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "Xiaomi 11T",
     img: "https://one-tech.es/wp-content/uploads/2021/09/xiaomi-11t-pro.png",
     Description: "Asd",
@@ -74,7 +74,7 @@ export const itemsData = [
   {
     id: 10,
     precio: 325,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "Xiaomi 11 Lite 5G NE",
     img: "https://www.kibotek.com/wp-content/uploads/2021/09/kiboTEK_xiaomi_mi11_5G_ne_010.png",
     Description: "Asd",
@@ -82,7 +82,7 @@ export const itemsData = [
   {
     id: 11,
     precio: 283,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "Xiaomi Mi 11 Lite 5G",
     img: "https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/12/29184905/CELU392NEGRO-128GB_0.png",
     Description: "Asd",
@@ -90,7 +90,7 @@ export const itemsData = [
   {
     id: 12,
     precio: 200,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "POCO M3 Pro 5G",
     img: "https://foxmoviles.com/wp-content/uploads/2021/06/M3pro-blue.png",
     Description: "Asd",
@@ -98,7 +98,7 @@ export const itemsData = [
   {
     id: 13,
     precio: 327,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "POCO M4 Pro 5G",
     img: "https://i01.appmifile.com/webfile/globalimg/xm_event/fr_poco/adc263fcfaaa8b36faab67051c1ebc3c.png?thumb=1&w=385&h=385&width=385&height=385",
     Description: "Asd",
@@ -106,7 +106,7 @@ export const itemsData = [
   {
     id: 14,
     precio: 307,
-    modelo: "xiaomi",
+    marca: "xiaomi",
     name: "Xiaomi Redmi Note 11 Pro 5G",
     img: "https://i01.appmifile.com/webfile/globalimg/pic/Redmi-Note-11-Pro-5G-b.png",
     Description: "Asd",
@@ -114,7 +114,7 @@ export const itemsData = [
   {
     id: 15,
     precio: 469,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone XS Max",
     img: "https://techstore.bo/wp-content/uploads/2020/08/iPhone-Xs-Max.png",
     Description: "Asd",
@@ -122,7 +122,7 @@ export const itemsData = [
   {
     id: 16,
     precio: 699,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone 11 Pro Max",
     img: "https://phonesdata.com/files/models/Apple--iPhone-11-Pro-Max-870.png",
     Description: "Asd",
@@ -130,7 +130,7 @@ export const itemsData = [
   {
     id: 17,
     precio: 729,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone 12",
     img: "https://www.pngmart.com/files/15/Apple-iPhone-12-PNG-HD.png",
     Description: "Asd",
@@ -138,7 +138,7 @@ export const itemsData = [
   {
     id: 18,
     precio: 1089,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone 12 Pro Max",
     img: "https://www.pngmart.com/files/15/Apple-iPhone-12-PNG-HD.png",
     Description: "Asd",
@@ -146,7 +146,7 @@ export const itemsData = [
   {
     id: 19,
     precio: 800,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone 13",
     img: "https://pngimg.com/uploads/iphone_13/iphone_13_PNG31.png",
     Description: "Asd",
@@ -154,7 +154,7 @@ export const itemsData = [
   {
     id: 20,
     precio: 1250,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone 13 Pro",
     img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346275",
     Description: "Asd",
@@ -162,7 +162,7 @@ export const itemsData = [
   {
     id: 21,
     precio: 1450,
-    modelo: "iphone",
+    marca: "iphone",
     name: "Apple iPhone 13 Pro Max",
     img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346295",
     Description: "Asd",
