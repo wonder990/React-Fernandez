@@ -1,12 +1,12 @@
-import Item from "./Item"
-const CardItems = ({item}) => {
+import Card from "./Card"
+const CardsItems = ({item}) => {
     return (
-        <div className="m-20 justify-center flex flex-wrap m-0">
+        <div className="min-h-screen mx-10 my-12 justify-center flex flex-wrap">
             {item.map( (items) => 
-                <Item key={items.id} item={items}/>
+                <Card key={items.id} item={items}/>
              )}
         </div>
     )
 }
 
-export default CardItems
+export default CardsItems

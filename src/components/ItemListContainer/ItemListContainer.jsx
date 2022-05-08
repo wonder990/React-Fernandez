@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react"
-import NavBar from "../NavBar/NavBar";
-import Footer from "../footer/Footer";
-import CardItems  from "./CardsItems";
+import CardsItems  from "./CardsItems";
 import { getItems } from "./getItems"
 
 const ItemListContainer = () => {
@@ -14,10 +12,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <NavBar/>
-            <CardItems item={item} />
-            <Footer/>
-            
+            <CardsItems item={item} />          
         </>
     )
 }

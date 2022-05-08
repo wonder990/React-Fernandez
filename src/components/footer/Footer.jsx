@@ -1,8 +1,7 @@
-const footer = () => {
+const Footer = () => {
     return (
-        <footer class="flex justify-center content-center w-max h-36">
-            <div>
-                <ul class="flex justify-between content-between w-96">
+        <footer className="h-16 bg-black flex items-center justify-center">
+                <ul className="text-white flex justify-between items-center w-96">
                     <li>
                         <a href="#" class="hover:underline md:mr-6 ">About</a>
                     </li>
@@ -16,9 +15,8 @@ const footer = () => {
                         <a href="#" class="hover:underline">Contact</a>
                     </li>
                 </ul>
-            </div>
         </footer>
     )
 }
 
-export default footer
+export default Footer
