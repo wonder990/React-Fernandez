@@ -11,6 +11,7 @@ const NavBar = () => {
         to="/"
         className="text-white text-xl font-bold mx-12 flex items-center"
       >
+        <i class="text-white text-[22px] mr-[10px] fa-brands fa-phoenix-framework"></i>
         AGON
       </Link>
       <ul className="flex items-center">
