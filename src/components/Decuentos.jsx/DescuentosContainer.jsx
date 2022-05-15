@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const DescuentosContainer = () => {
   return (
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis hic quasi laborum, nulla est delectus aspernatur quod non similique maiores dolore ut voluptate reiciendis? Sapiente beatae aliquam possimus ex amet! Officia tempore recusandae illum fugiat eius ipsum alias autem, porro odio veniam perferendis sit quia nulla assumenda aspernatur, minus natus?</div>
-  )
-}
+    <div className="min-h-screen text-center">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus,
+        dicta officia est vero, cupiditate cum nemo nihil eius necessitatibus
+        commodi deserunt mollitia cumque molestiae ad. Animi modi ipsum
+        perferendis esse.*100
+      </p>
+    </div>
+  );
+};
 
-export default DescuentosContainer
+export default DescuentosContainer;

@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from "react"
-import CardsItems  from "./CardsItems";
-import { getItems } from "./getItems"
+import CardsItems from "./CardsItems";
 
 const ItemListContainer = () => {
-    const [item, setItems] = useState([]);
-    useEffect(() => {
-      getItems()
-        .then((result) => setItems(result))
-        .catch((error) => console.log(error))       
-    }, []);
+  return (
+    <>
+      <CardsItems />
+    </>
+  );
+};
 
-    return (
-        <>
-            <CardsItems item={item} />          
-        </>
-    )
-}
-
-export default ItemListContainer
+export default ItemListContainer;

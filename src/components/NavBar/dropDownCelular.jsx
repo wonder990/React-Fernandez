@@ -1,18 +1,22 @@
-import { Link } from "react-router-dom"
-import { itemsData } from "../ItemListContainer/ItemsData"
+import { Link } from "react-router-dom";
 
 const DropDownCelular = () => {
-    return (
-        <>
-        <div className="group inline-block relative">
-        <Link to={"/productos"} className="font-medium px-10 py-3 text-white inline-flex items-center">
-          <a href="#"className="w-full mr-1"> CELULARES</a>
+  return (
+    <>
+      <div className="group inline-block relative">
+        <Link
+          to={"/productos"}
+          className="font-medium px-10 py-3 text-white inline-flex items-center"
+        >
+          <span href="#" className="w-full mr-1">
+            CELULARES
+          </span>
           <svg
             className="fill-current h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20">
-            <path
-              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+            viewBox="0 0 20 20"
+          >
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
           </svg>
         </Link>
         {/* <ul className="absolute hidden w-full text-gray-700 pt-1 group-hover:block">
@@ -35,11 +39,9 @@ const DropDownCelular = () => {
               >IPHONE</a>
           </a>
         </ul> */}
-        </div>
-        </>
-    )
-}
+      </div>
+    </>
+  );
+};
 
-export default DropDownCelular
-
-
+export default DropDownCelular;
