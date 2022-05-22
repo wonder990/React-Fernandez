@@ -6,7 +6,7 @@ import { useItemsContext } from "../../contexts/ItemsContext";
 const ItemDetail = () => {
   const { items } = useItemsContext();
 
-  const { cart, addItem } = useCartContext();
+  const { addItem } = useCartContext();
 
   const { itemid } = useParams();
   const [item, setitem] = useState({});
@@ -20,7 +20,7 @@ const ItemDetail = () => {
     fn();
   }, [items]);
 
-  const [Quantity, setQuantity] = useState(1); // cambiar a quantity
+  const [Quantity, setQuantity] = useState(1);
 
   const onPlus = () => {
     if (Quantity >= 10) return;
@@ -46,6 +46,7 @@ const ItemDetail = () => {
       }, 1000);
     });
   };
+  console.log(item);
 
   if (item === undefined) return null;
 
@@ -54,7 +55,7 @@ const ItemDetail = () => {
       <div className="my-20 flex flex-col items-center lg:flex-row">
         <div className="w-full flex items-center flex-col lg:w-1/2">
           <img
-            className="object-cover w-[90%] lg:w-[650px]"
+            className="object-cover w-[90%] sm:w-auto sm:max-h-[400px]"
             src={item.img}
             alt={item.name}
           />
@@ -95,7 +96,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   PANTALLA
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.pantalla}
                 </td>
               </tr>
@@ -103,7 +104,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   PROCESADOR
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.procesador}
                 </td>
               </tr>
@@ -111,7 +112,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   MEMORIA RAM
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.mram}
                 </td>
               </tr>
@@ -119,7 +120,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   ALMACENAMIENTO
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.almacenamiento}
                 </td>
               </tr>
@@ -127,7 +128,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   CAMARA TRASERA
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.camaratrasera}
                 </td>
               </tr>
@@ -135,7 +136,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   CAMARA FRONTAL
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.camaradelantera}
                 </td>
               </tr>
@@ -143,7 +144,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   BATERIA
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.bateria}
                 </td>
               </tr>
@@ -151,7 +152,7 @@ const ItemDetail = () => {
                 <td className="p-4 border-2 font-bold border-black text-center">
                   SISTEMA OPERATIVO
                 </td>
-                <td className="p-4 text-sm border-2 border-black text-center">
+                <td className="font-medium p-4 text-sm border-2 border-black text-center">
                   {item.sop}
                 </td>
               </tr>

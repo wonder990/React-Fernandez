@@ -6,17 +6,17 @@ const NavBar = () => {
   const { cart } = useCartContext();
 
   return (
-    <div className="font-sans bg-black flex justify-between content-center h-14">
+    <div className="font-sans bg-neutral-800 flex justify-between content-center h-14">
       <Link
         to="/"
         className="text-white text-xl font-bold mx-12 flex items-center"
       >
-        <i class="text-white text-[22px] mr-[10px] fa-brands fa-phoenix-framework"></i>
+        <i className="text-white text-[22px] mr-[10px] fa-brands fa-phoenix-framework"></i>
         AGON
       </Link>
       <ul className="flex items-center">
         <DropDownCelular li="MARCA" />
-        <Link to="/" className="text-white font-medium px-10">
+        <Link to="/" className="hover:scale-100 text-white font-medium px-10">
           SOBRE NOSOTROS
         </Link>
         <Link to="/descuentos" className="text-white font-medium px-10">

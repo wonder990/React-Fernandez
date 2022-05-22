@@ -9,6 +9,7 @@ import DescuentosContainer from "./components/Decuentos.jsx/DescuentosContainer"
 import { ItemsProvider } from "./contexts/ItemsContext";
 import { CartProvider } from "./contexts/CartContext";
 import Cart from "./components/cart";
+import ItemsCollection from "./components/shop/ItemCollection";
 
 function App() {
   return (
