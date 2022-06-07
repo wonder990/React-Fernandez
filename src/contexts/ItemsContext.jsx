@@ -4,12 +4,15 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
 const ItemsContext = createContext();
 
 export const ItemsProvider = ({ children }) => {
-  // const [items, setItems] = useState([]);
-  // useEffect(() => {
-  //   getItems()
-  //     .then((result) => setItems(result))
-  //     .catch((error) => console.log(error));
-  // }, []);
+  const [ModDark, setModDark] = useState(true);
+  const Bg = () => {
+    setModDark(!ModDark);
+  };
+  useEffect(() => {
+    getItemsShop();
+  }, []);
+
+  const [ItemProduct, setItemProduct] = useState("");
   const [items, setitems] = useState([]);
 
   const getItemsShop = () => {
@@ -27,7 +30,16 @@ export const ItemsProvider = ({ children }) => {
   };
 
   return (
-    <ItemsContext.Provider value={{ items: items, getItemsShop }}>
+    <ItemsContext.Provider
+      value={{
+        items: items,
+        getItemsShop,
+        ModDark,
+        Bg,
+        ItemProduct,
+        setItemProduct,
+      }}
+    >
       {children}
     </ItemsContext.Provider>
   );

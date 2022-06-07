@@ -5,11 +5,12 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import SobreNosotros from "./components/sobreNosotros/SobreNosotros";
 import Footer from "./components/footer/Footer";
 import ItemDetail from "./components/ItemDetail/ItemDetail";
-import DescuentosContainer from "./components/Decuentos.jsx/DescuentosContainer";
-import { ItemsProvider } from "./contexts/ItemsContext";
+import { ItemsProvider, useItemsContext } from "./contexts/ItemsContext";
 import { CartProvider } from "./contexts/CartContext";
 import Cart from "./components/cart";
-import ItemsCollection from "./components/shop/ItemCollection";
+import Contacto from "./components/Contacto/Contacto";
+import FormCart from "./components/cart/form";
+import { useEffect } from "react";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
               <Route path="/" element={<SobreNosotros />} />
               <Route path="/productos" element={<ItemListContainer />} />
               <Route path="/productos/:itemid" element={<ItemDetail />} />
-              <Route path="/descuentos" element={<DescuentosContainer />} />
+              <Route path="/contacto" element={<Contacto />} />
               <Route path="/cart" element={<Cart />} />
             </Routes>
             <Footer />

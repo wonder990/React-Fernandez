@@ -23,7 +23,7 @@ export const CartProvider = ({ children }) => {
 
     if (isInCart(itemId)) {
       const index = cart.findIndex((cartItem) => cartItem.id === itemId);
-      newCart = newCart.filter((cartItem, i) => i !== index);
+      newCart = newCart.filter((i) => i !== index);
     }
   }
   function clear() {
@@ -31,7 +31,7 @@ export const CartProvider = ({ children }) => {
   }
 
   function isInCart(id) {
-    return cart.some((cartItem) => cartItem.item.id == id);
+    return cart.some((cartItem) => cartItem.item.id === id);
   }
 
   function removeFromCart(id) {
@@ -40,17 +40,11 @@ export const CartProvider = ({ children }) => {
     console.log(itemRemove);
   }
 
-  function cantInCart() {
-    let total = 0;
-    return total;
-  }
-
   function calcPriceCart() {
-    let total = 0;
-    cart.forEach((element) => {
-      total = total + element.item.precio * element.quantity;
-    });
-    return total;
+    return cart.reduce(
+      (acc, element) => acc + element.item.precio * element.quantity,
+      0
+    );
   }
 
   return (
@@ -60,7 +54,6 @@ export const CartProvider = ({ children }) => {
         addItem,
         removeItem,
         clear,
-        cantInCart,
         calcPriceCart,
         removeFromCart,
       }}
