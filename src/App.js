@@ -5,12 +5,10 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import SobreNosotros from "./components/sobreNosotros/SobreNosotros";
 import Footer from "./components/footer/Footer";
 import ItemDetail from "./components/ItemDetail/ItemDetail";
-import { ItemsProvider, useItemsContext } from "./contexts/ItemsContext";
+import { ItemsProvider } from "./contexts/ItemsContext";
 import { CartProvider } from "./contexts/CartContext";
 import Cart from "./components/cart";
 import Contacto from "./components/Contacto/Contacto";
-import FormCart from "./components/cart/form";
-import { useEffect } from "react";
 
 function App() {
   return (

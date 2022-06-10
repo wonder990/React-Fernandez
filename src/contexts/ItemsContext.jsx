@@ -8,11 +8,8 @@ export const ItemsProvider = ({ children }) => {
   const Bg = () => {
     setModDark(!ModDark);
   };
-  useEffect(() => {
-    getItemsShop();
-  }, []);
 
-  const [ItemProduct, setItemProduct] = useState("");
+  const [ItemProduct, setItemProduct] = useState();
   const [items, setitems] = useState([]);
 
   const getItemsShop = () => {
@@ -28,6 +25,9 @@ export const ItemsProvider = ({ children }) => {
       }
     });
   };
+  useEffect(() => {
+    getItemsShop();
+  }, [ItemProduct]);
 
   return (
     <ItemsContext.Provider

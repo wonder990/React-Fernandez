@@ -25,9 +25,9 @@ const Contacto = () => {
               className={
                 ModDark
                   ? "block text-gray-700 text-sm font-bold mb-2"
-                  : "text-white block text-sm font-bold mb-2"
+                  : " block text-sm font-bold mb-2"
               }
-              for="username"
+              htmlFor="username"
             >
               Nombre de usuario
             </label>
@@ -39,14 +39,52 @@ const Contacto = () => {
               placeholder="Username"
             />
           </div>
+          <div className="mb-4">
+            <label
+              className={
+                ModDark
+                  ? "block text-gray-700 text-sm font-bold mb-2"
+                  : " block text-sm font-bold mb-2"
+              }
+              htmlFor="username"
+            >
+              Email
+            </label>
+            <input
+              required
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="email"
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className={
+                ModDark
+                  ? "block text-gray-700 text-sm font-bold mb-2"
+                  : " block text-sm font-bold mb-2"
+              }
+              htmlFor="username"
+            >
+              Celular
+            </label>
+            <input
+              required
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="number"
+              placeholder="Numero de celular"
+            />
+          </div>
           <div className="mb-6">
             <label
               className={
                 ModDark
                   ? "block text-gray-700 text-sm font-bold mb-2"
-                  : "text-white block text-sm font-bold mb-2"
+                  : " block text-sm font-bold mb-2"
               }
-              for="password"
+              htmlFor="password"
             >
               Contraseña
             </label>
@@ -61,21 +99,12 @@ const Contacto = () => {
           <div className="flex items-center justify-between">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button"
+              type="submit"
             >
               Enviar
             </button>
-            <a
-              className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-              href="#"
-            >
-              Forgot Password?
-            </a>
           </div>
         </form>
-        <p class="text-center text-gray-500 text-xs">
-          &copy;2020 Acme Corp. All rights reserved.
-        </p>
       </div>
     </div>
   );

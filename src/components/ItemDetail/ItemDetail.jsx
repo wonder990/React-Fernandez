@@ -49,8 +49,8 @@ const ItemDetail = () => {
 
   if (item === undefined)
     return (
-      <div>
-        <h1>asd</h1>
+      <div className="min-h-screen flex items-center justify-center">
+        <span className="font-bold text-[30px]">Cargando.......</span>
       </div>
     );
 
@@ -78,7 +78,7 @@ const ItemDetail = () => {
               Conocé los tiempos y las formas de envío.
             </p>
             <span className="text-[17px] text-green-500 font-semibold">
-              <i class="pr-4 fa-solid fa-arrow-rotate-left"></i>
+              <i className="pr-4 fa-solid fa-arrow-rotate-left"></i>
               Devolución gratis
             </span>
             <p className="ml-[33px] text-[15px] text-stone-500">

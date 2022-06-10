@@ -12,7 +12,7 @@ const DropDownCelular = () => {
     <>
       <div className="group inline-block relative w-full lg:w-auto">
         <Link
-          onClick={() => itemTypeProduct("celular")}
+          onClick={() => itemTypeProduct()}
           to={"/productos"}
           className="w-full lg:hover:text-slate-400 hover:bg-zinc-700 lg:hover:bg-neutral-800 hover:text-white duration-300 font-medium py-[50px] px-[30px] lg:px:10 lg:py-[16px] text-white inline-flex items-center"
         >

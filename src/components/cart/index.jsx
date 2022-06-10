@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../contexts/CartContext";
 import { useItemsContext } from "../../contexts/ItemsContext";
-import FormCart from "./form";
+import FormCart from "./formCart";
 
 const Cart = () => {
-  const { cart, clear, calcPriceCart, removeFromCart } = useCartContext();
+  const { cart, calcPriceCart, removeFromCart } = useCartContext();
   const { ModDark } = useItemsContext();
+
+  const [purchaseForm, setpurchaseForm] = useState(true);
+  const valuePurchase = () => setpurchaseForm(!purchaseForm);
 
   useEffect(() => {
     calcPriceCart();
@@ -109,7 +112,7 @@ const Cart = () => {
             </span>
             <button
               className="text-center w-[200px] h-[30px] text-xl bg-orange-500 text-white rounded hover:bg-amber-700 duration-500"
-              onClick={clear}
+              onClick={valuePurchase}
             >
               Comprar
             </button>
@@ -123,6 +126,11 @@ const Cart = () => {
             </button>
           </Link>
         </div>
+        {purchaseForm ? (
+          ""
+        ) : (
+          <FormCart precio={calcPriceCart} cart={cart} form={valuePurchase} />
+        )}
       </div>
     </div>
   );
